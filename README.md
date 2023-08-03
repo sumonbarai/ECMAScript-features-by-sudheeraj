@@ -783,7 +783,8 @@ Each proposal for an ECMAScript feature goes through the following maturity stag
 18. ### Symbols
 
     Symbol is a new peculiar primitive data type of JavaScript, along with other primitive types such as string, number, boolean, null and undefined. The new symbol is created just by calling the Symbol function. i.e, Every time you call the Symbol function, you’ll get a new and completely unique value. You can also pass a parameter to Symbol(), which is useful for debugging purpose only.
-
+    
+It represents a unique "hidden" identifier that no other code can accidentally access.
     Even though equality checks on two symbols is always false, it will be true while comparing symbols with `.for` method due to global registry (i.e, Symbols.for('key') === Symbols.for('key'))
 
     These symbols are useful to uniquely identify properties or unique constants,
@@ -824,7 +825,7 @@ Each proposal for an ECMAScript feature goes through the following maturity stag
 
     **[⬆ Back to Top](#table-of-contents)**
 
-19. ### Proxies
+20. ### Proxies
     The Proxy object is used to create a proxy for another object, which can intercept and redefine fundamental operations for that object such as property lookup, assignment, enumeration, function invocation etc. These are used in many libraries and some browser frameworks.
 
     The proxy object is created with two parameters with below syntax,
@@ -888,7 +889,7 @@ Each proposal for an ECMAScript feature goes through the following maturity stag
 
     **[⬆ Back to Top](#table-of-contents)**
 
-20. ### Promises
+21. ### Promises
 
     A promise is an object which represent the eventual completion or failure of an asynchronous operation.
 
@@ -928,7 +929,7 @@ Each proposal for an ECMAScript feature goes through the following maturity stag
 
     **[⬆ Back to Top](#table-of-contents)**
 
-21. ### Reflect
+22. ### Reflect
 
     Reflection is the ability of a code to inspect and manipulate variables, properties, and methods of objects at runtime. JavaScript already provides `Object.keys(), Object.getOwnPropertyDescriptor(), and Array.isArray()` methods as classic refection features. In ES6, it has been officially provided through Reflect object. Reflect is a new global object which is used to call methods, construct objects, get and set properties, manipulate and extend properties.
 
@@ -1053,7 +1054,7 @@ Each proposal for an ECMAScript feature goes through the following maturity stag
 
     **[⬆ Back to Top](#table-of-contents)**
 
-22. ### Binary and Octal
+23. ### Binary and Octal
     ES5 provided numeric literals in octal (prefix 0), decimal (no prefix), and hexadecimal ( 0x) representation. ES6 added support for binary literals and improvements on octal literals.
 
     **1. Binary literals:**
@@ -1103,7 +1104,7 @@ Each proposal for an ECMAScript feature goes through the following maturity stag
 
     **[⬆ Back to Top](#table-of-contents)**
 
-23. ### Proper Tail Calls
+24. ### Proper Tail Calls
 
  **Proper tail call(PTC)** is a technique where the program or code will not create additional stack frames for a recursion when the function call is a tail call.
 
